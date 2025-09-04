@@ -1,0 +1,440 @@
+
+:root{
+  /* Light Mode */
+  --primary-color:#4b0076;
+  --secondary-color:#8e2cf6;
+  --tertiary-color:#c8a9e9;
+  --light-background:#e2cafb;
+  --buttons-color: rgb(95, 34, 152);
+  --second-letter-color:#ffffff;
+  --foot-header-color:#231942;
+  --p-color:#000000;
+  --label-color:#260272;
+  --submit-color:#c34794;
+  --h3-Color:#4b0076;
+  /* Dark Mode */
+
+}
+
+.DarkMode{
+  --primary-color:#ffffff;
+  --secondary-color:#e0cfe2;
+  --tertiary-color:#c8a9e9;
+  --light-background:#43078d;
+  --buttons-color: rgb(95, 34, 152);
+  --second-letter-color:#ffffff;
+  --foot-header-color:#231942;
+  --p-color:#d0b4f1;
+  --label-color:#babce7;
+  --submit-color:#c34794;
+  --h3-Color:#f1f0f3;
+}
+
+
+body {
+    margin: 0;
+    height: 100;
+    width: 100;    
+    background-color: var(--light-background);
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+  color:var(--primary-color);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2{
+  color:var(--secondary-color);
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+h3 {
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+p {
+  color: var(--p-color);
+}
+
+#explanationtext p {
+    color: azure;
+}
+
+li {
+  margin-bottom: 0%;
+}
+
+a{
+  color: var(--secondary-color);
+}
+a:visited {
+  color: rgb(69, 72, 229);
+}
+a:hover {
+  color: rgb(200, 9, 203);
+}
+
+img{
+  max-width: fit-content;
+  max-width: 100%;
+}
+    
+button{
+  background-color: var(--buttons-color);
+  color: var(--second-letter-color);
+  border-radius: 0.2cm;
+  cursor: pointer;
+
+}
+
+.header-buttons{
+  margin: 0.6cm;
+  padding:0.2cm;
+}
+
+
+.header-container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1cm;
+
+}
+
+.footer { 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--foot-header-color);
+  color: var(--second-letter-color);
+}
+
+/* Navar Section */
+
+.navbar{
+  background-color: var(--foot-header-color);
+  padding: 0.7cm;
+}
+
+.navbar ul {
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+  list-style-type: none;  
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  margin-bottom: 1cm;
+}
+
+.navbar ul li {
+  display: block;
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0%;
+  color: #ffffff;
+}
+
+.navbar ul li a:hover {
+  color: #5d89ef;
+}
+
+#title{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.Intruction {
+  text-align: center;
+}
+
+#SignInButtons{
+  display: flex;
+  justify-content: center;
+}
+
+#Explanation{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #fcfcfc;
+  padding: 1cm;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#explanationtext{
+  margin: 0.2cm;
+}
+
+/* About the event section */
+
+#EvenExplanation{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#LinksEvent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#forum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* RSVP Section */
+
+#rsvp-button{
+  background-color: var(--submit-color);
+  border-radius: 8px;
+}
+
+label {
+  color: var(--label-color);
+}
+
+#Forum-link{
+  background-color: rgb(95, 34, 152);
+  color: #eae4f8;
+  border-radius: 0.2cm;
+  padding-left: 1.5cm;
+  padding-right: 1.5cm;
+  padding-bottom: 0.8cm;
+  padding-top: 0.8cm;
+  font-size: 0.5cm;
+  margin-bottom: 0.5cm;
+}
+
+.RSVP-info-participants{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 2cm;
+  margin-left: 2cm;
+  
+}
+
+.RSVP-info {
+  margin-right: 0.2cm;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.RSVP-participants{
+  flex-grow: 3;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.rsvp-attending {
+  color: hotpink;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#rsvp-button {
+  margin-top: 0.5cm;
+  margin-bottom: 1cm;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red; 
+  background-color: #ffe0e0; 
+}
+
+/* Pop Up Section */
+
+.modal {
+  position: fixed;
+  inset: 0; /* top: 0; bottom: 0; left: 0; right: 0 */
+  display: none; /* grid = appears Pop Up */
+  place-items: center; /* centra vertical y horizontalmente */
+  background-color: rgba(0, 0, 0, 0.3); /* opcional: fondo transparente */
+  padding: 10em;
+
+  /* Animación */
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.modal.scaleIn {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.PopUp {
+  background-color: white; /* o el color claro que estás usando */
+  border-radius: 25px;
+  padding: 1em;
+  font-size: clamp(1rem, 1.7vw, 3rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 80vw;
+}
+
+
+.message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message p{
+  color: #000000;
+}
+
+#CloseButton {
+  margin-top: 2%;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.5vw;
+}
+
+#PopUpImage {
+  width: 35%;  
+  height: auto;
+}
+
+.no-modal-animation .modal {
+  transition: none; /* Anula la transición del modal */
+}
+
+.no-modal-animation .modal img {
+  animation: none; /* Anula la animación de la imagen */
+  transform: none !important; /* Asegura que la rotación se anule */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* semitransparente */
+  z-index: 1000;
+  display: none; /* oculto por defecto */
+}
+
+.modal1 {
+  position: fixed;
+  /* demás estilos */
+  z-index: 1010; 
+}
+
+
+/* Book Recomendations Section */
+
+.carousel-container {
+  max-width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.carousel-container h3{
+  color: var(--h3-Color);
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.book-card {
+  flex: 0 0 auto;
+  width: 150px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card p{
+  color: #000000;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: #ffffffaa;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background-color: #fff;
+}
+
+.arrow.left {
+  left: 5px;
+  color: #542ec5;
+}
+
+.arrow.right {
+  right: 5px;
+  color: #542ec5;
+}
+
+.arrow.left {
+    color: black;
+}
+
+#ThirdCarrousel {
+  margin-bottom: 1.5cm;
+}
+

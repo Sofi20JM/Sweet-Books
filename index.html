@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sweet Books</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="images/SweetBooks.png" type="image/x-icon" />
+    </head>
+
+    <body >
+<!-- Navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Explanation">About the Event</a></li>
+                <li><a href="#BookRecommendations">Book Recommendations</a></li>
+                <li><button id="themeButton">Toggle Dark Mode</button></li>
+                <li><button id="ReduceMotion">Reduce Motion Off</button></li>
+                </ul><br>
+        </div>
+
+<!-- Header -->
+        <div  id="home" class="header-container">
+            <div id="title">
+                <img id="header-image" src="images/SweetBooks.png" alt="Sweet Books Logo" width="100px">
+                <h1 id="header-left">Sweet Books</h1>
+            </div>
+
+            <div>
+                <button class="header-buttons">Sign Up</button>
+                <button class="header-buttons">Register</button>
+            </div>
+        </div>
+
+<!-- Welcoming and general information about the website -->
+        <div class="Intruction">
+            <p class="dark-mode">Hil Welcome to Sweet Books, a web page dedicated to bring to you the best book recommendations ever based on the PEN World Voices Festival
+            We are always looking for new books to explore and dive into new extraordinary experiences. If you are a passionate reader that follows the PEN World Festival every year you are on the correct place.</p>
+            <p class="dark-mode">We recommend signing in to the website. If you already have an account, please register so you can share your experience at the PEN World Voices Festival with us if you attend. You will also receive individual information about new books and authors related to the festival each year..</p>
+        </div> 
+<!-- Singing and forum section -->
+
+        <!-- Forum-->
+        <div id="forum">
+                <h2>Forum</h2>
+                <p class="dark-mode">This is the place where you can share your thoughts about the event or any book recommendation. We would be really happy to read you.</p> 
+                <button id="Forum-link">Forum Space</button>
+        </div>
+ <!-- Information about the event -->
+        <div id="Explanation"> <!-- first level of flexbox-->
+            <h2>About the event</h2>
+            <div id="EvenExplanation">  <!-- Second level of flexbox-->
+                <div>
+                    <iframe src="https://www.youtube.com/embed/JTLH5odNG_Q?si=C4ZtZc4D963TgK7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="explanationtext">
+                    <p>The World Voices Festival, established in 2004 by Salman Rushdie, Esther Allen, and Michael Roberts, is organized by PEN America to celebrate international literature and free expression. It was created after 9/11 to counter U.S. isolationism and promote global dialogue.
+                    The festival features over 100 writers from 35 countries. It aims to honor storytelling as a powerful tool against censorship, emphasizing literature's role in shaping culture, identity, and empowerment.
+                    The festival also reflects PEN America's belief that literature and journalism are vital defenses against the rise of autocratic forces threatening democracy.</p>
+                    <p>For the year 2025, the event will feature speakers from Los Angeles and New York City, taking place from April 30th to May 3rd. Be sure to purchase your tickets in advance! This is a fantastic opportunity to learn from various authors from around the world and discover incredible books that could help you during difficult times or even change your life completely. </p>
+                    <p>To gain unlimited access to the 30+ events being held, there is a special fee of $75. However, students and PEN America members can receive a discount. Don’t forget to share your experiences and opinions about the books you discover at this incredible event with us!</p>
+                </div>
+            </div>
+            <div id="LinksEvent"> <!-- second level of flexbox -->
+                <div>
+                    <img src="images/PEN.jpg" alt="PEN Wold Voices Festival Image">
+                </div>
+                <div id="linkstopageevent">
+                    <h3>Some Helpfull Links</h3>
+                    <ul>
+                        <li><a href="https://worldvoices.pen.org/speakers/?_location=new-york">Featured Speakers</a></li>
+                        <li><a href="https://worldvoices.pen.org/">PEN World Voices Festival Page</a></li>
+                        <li><a href="https://pen.org/membership/">Become a PEN America member</a></li>
+                        <li><a href="https://airtable.com/appaQ7NTMTmvGZcAE/shr980b9fNvLDqCvN">Register as a volanteer to the event</a></li>
+                        <li>Email to ask any question or request a discount: <a href="publicprograms@pen.org">publicprograms@pen.org</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- RSVP Section -->
+        <div>
+            <h2 >RSVP For the Event</h2>
+            <div class="RSVP-info-participants">
+                <div class="RSVP-info">
+                    <p>Please fill out the RSVP form to let us know if you plan to attend the event. We greatly appreciate everyone taking the time to inform us of their attendance at this lovely occasion. We find it particularly interesting to connect with individuals from various parts of the United States who share our love for literature and are making their way to the PEN America World Voices Festival.</p>
+                </div>
+                <div class="RSVP-participants" >
+                    <h3 class="rsvp-attending">People Attending</h3>
+                    <p id="rsvp-count">​⭐​ 3 people have RSVP'd!</p>
+                    <p>💝​Noemi from New Mexico has RSVP'd!</p>
+                    <p>💝​Lyna from Arizona has RSVP'd!</p>
+                    <p>💝​Ethan from Washington has RSVP'd!</p>
+                    <div id="participantList">
+
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <form class="RSVP-form" id="rsvpForm">
+                    <label for="pName">Name</label>
+                    <input type="text" id="pName" name="pName">
+                    <label for="pState">State</label>
+                    <input type="text" id="pState" name="pState">
+                    <label for="pEmail">Email</label>
+                    <input type="email" id="pEmail" name="pEmail">
+                    <input type="submit" id="rsvp-button">
+                </form>
+            </div>
+        </div>
+<!-- Pop Up section -->
+        <div class="overlay"></div>
+        <div class="modal1">
+            <div class="modal scaleIn">
+                <div class="PopUp">
+                    <div class="message">
+                        <p>Thank you for your attendance confirmation! </p>
+                        <p>We hope to see you there 💫</p> 
+                        <button id="CloseButton">Close</button>
+                    </div>
+                    <img id="PopUpImage" src="images/ThankedBook.png" alt="Thanked Book Image">
+                </div>
+            </div>
+        </div>
+<!-- Book recommendations sections -->
+        <!--- First carousel-->
+        <div class="carousel-container" id="BookRecommendations">
+            <h2>Book recommendations</h2>
+            <p>Here you will find some of the most interesting books featured at the event, organized by genre. If you'd like, you can read the synopsis by clicking on it.</p>
+            <h3>Memoirs and Biographies</h3>
+            <div class="carousel-wrapper">
+                <button class="arrow left" id="btn-left1">←</button>
+                <div class="carousel" id="carousel1">
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.0.jpeg" alt="Libro 1">
+                        <h4>Survival Is a Promise: The Eternal Life of Audre Lorde</h4>
+                        <p>Alexis Pauline Gumbs</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.1.jpg" alt="Libro 2">
+                        <h4>A men of two faces: A Memoir, a History, a Memorial</h4>
+                        <p>Viet Thanh Nguyen</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.2.jpg" alt="Libro 3">
+                        <h4>Once I Was You: A Memoir of Love and Hate in a Thirsty Land</h4>
+                        <p>Maria Hinojosa</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.3.jpeg" alt="Libro 4">
+                        <h4>Notes on Grief</h4>
+                        <p>Chimamanda Ngozi Adichie</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.4.jpeg" alt="Libro 5">
+                        <h4>The Secret Life of the Universe: An Astrobiologist's Search for the Origins and Frontiers of Life</h4>
+                        <p>Nathalie A. Cabrol</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.5.jpeg" alt="Libro 6">
+                        <h4>How to Win on Information War: The Propagandist Who Outwitted Hitler</h4>
+                        <p>Peter Pomerantsev</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.6.jpeg" alt="Libro 7">
+                        <h4>The Rediscovery of America: Native Peoples and the Unmaking of U.S. History</h4>
+                        <p>Ned Blackhawk</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.7.jpeg" alt="Libro 8">
+                        <h4>Unmasking AI: My Mission to Protect What Is Human in a Worls of Machines</h4>
+                        <p>Joy Buolamwini</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.8.jpeg" alt="Libro 9">
+                        <h4>Native Nations: A Millennium in North America</h4>
+                        <p>Kathleen DuVal</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/1.9.jpeg" alt="Libro 10">
+                        <h4>Notes from an Apocalypse: A Personal Journey to the End of World and Back</h4>
+                        <p>Mark O'Connell</p>
+                    </div>
+                </div>
+                <button class="arrow right" id="btn-right1">→</button>
+            </div>
+        </div>
+        <!--- Second Carousel -->
+        <div class="carousel-container">
+            <h3>Novels</h3>
+            <div class="carousel-wrapper">
+                <button class="arrow left" id="btn-left2">←</button>
+                <div class="carousel" id="carousel2">
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.0.jpeg" alt="Libro 1">
+                        <h4>Pink Slime</h4>
+                        <p>Fernanda Trías</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.1.jpeg" alt="Libro 2">
+                        <h4>The Candy House</h4>
+                        <p>Jennifer Egan</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.2.jpeg" alt="Libro 3">
+                        <h4>Call Me by Your Name</h4>
+                        <p>André Aciman</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.3.jpeg" alt="Libro 4">
+                        <h4>The bullet Swallower</h4>
+                        <p>Elizabeth Gonzalez James</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.4.jpeg" alt="Libro 5">
+                        <h4>The Unsettled</h4>
+                        <p>Ayana Mathis</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.5.jpeg" alt="Libro 6">
+                        <h4>Either/Or</h4>
+                        <p>Elif Batuman</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.6.png" alt="Libro 7">
+                        <h4>La Virgen Cabeza</h4>
+                        <p>Gabriela Cabezón Cámara</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.7.jpeg" alt="Libro 8">
+                        <h4>Countries of Origin</h4>
+                        <p>Javier Fuentes</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.8.jpeg" alt="Libro 9">
+                        <h4>The Fraud </h4>
+                        <p>Zadie Smith</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/2.9.jpeg" alt="Libro 10">
+                        <h4>The Friend</h4>
+                        <p>Sigrid Nunez</p>
+                    </div>
+                </div>
+                <button class="arrow right" id="btn-right2">→</button>
+            </div>
+        </div>
+        <!--- Third Carousel -->
+        <div class="carousel-container" id="ThirdCarrousel">
+            <h3>Journalism and Literary Criticism</h3>
+            <div class="carousel-wrapper">
+                <button class="arrow left" id="btn-left3">←</button>
+                <div class="carousel" id="carousel3">
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.0.jpeg" alt="Libro 1">
+                        <h4>Fun Home</h4>
+                        <p>Lisa Kron</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.1.jpeg" alt="Libro 2">
+                        <h4>Baland Fanatics: Liberals, Race, and Empire</h4>
+                        <p>Pankaj Mishra</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.2.jpeg" alt="Libro 3">
+                        <h4>Filterworld: How Algorithms Flattened Culture</h4>
+                        <p>Kyle Chayka</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.3.jpeg" alt="Libro 4">
+                        <h4>How to Do Nothing</h4>
+                        <p>Jenny Odell</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.4.jpeg" alt="Libro 5">
+                        <h4>Trick Mirror</h4>
+                        <p>Jia Tolentino</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.5.jpeg" alt="Libro 6">
+                        <h4>Stories Are Weapons: Psychological Warfare and the American Mind</h4>
+                        <p>Annalee Newitz</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.6.jpeg" alt="Libro 7">
+                        <h4>The Dead of the Artist</h4>
+                        <p>William Deresiewicz</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.7.jpeg" alt="Libro 8">
+                        <h4>Anxious People</h4>
+                        <p>Fredrik Backman</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.8.jpeg" alt="Libro 9">
+                        <h4>Sweat</h4>
+                        <p>Lynn Nottage</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="/images/BookImages/3.9.jpeg" alt="Libro 10">
+                        <h4>Down in Mississippi</h4>
+                        <p>Carlyle Brown</p>
+                    </div>
+                    <!-- Agrega más tarjetas aquí -->
+                </div>
+                <button class="arrow right" id="btn-right3">→</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="link-to-page"> more </a> / <a href="email.com"> email our team </a></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
